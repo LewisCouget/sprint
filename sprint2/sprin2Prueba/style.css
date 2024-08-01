@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "karla", sans-serif;
+
+}
+
+body {
+
+    padding: 200px;
+}
+
+h1 {
+    color: rgb(87, 194, 194);
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.colorArriba {
+    color: hsl(210, 1%, 58%)
+}
+
+h4 {
+    color: white;
+}
+
+p {
+    color: hsl(204, 43%, 93%);
+}
+
+header {
+    display: block;
+    border: 100px;
+    padding: 35px;
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    color: rgb(219, 219, 219)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dollar {
+    font-size: 40px;
+}
+
+.gris {
+    color: hsl(200, 2%, 75%);
+}
+
+/* Cajas */
+#Contenedor {
+    display: flex;
+
+}
+
+.caja1 {
+    border: 100px;
+    padding: 20px 70px 20px 40px;
+    background-color: rgb(41, 161, 161);
+    border-radius: 0px 0px 0px 8px;
+}
+
+.caja2 {
+    border: 100px;
+    padding: 20px 70px 20px 40px;
+    background-color: rgb(31, 172, 172);
+    border-radius: 0px 0px 8px 0px;
+}
+
+button {
+    font-size: 17px;
+    color: aliceblue;
+    padding: 20px 100px;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgb(146, 197, 68);
+}
+
+div {
+    color: aliceblue;
+}

@@ -1,0 +1,169 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --off-cyan: rgb(50, 172, 172);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400, 700;
+    line-height: 1.6;
+}
+
+body {
+    background-color: var(--Light-Gray);
+    height: 100vh;
+    padding: 120px 40px;
+    font-family: "karla", sans-serif;
+}
+
+
+/* Pantalla Telefono */
+.contenedores {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+
+/* Primer Area */
+header {
+    padding: 25px 40px 40px 40px;
+    background-color: white;
+
+}
+
+.titulo1 {
+    color: var(--Cyan);
+    font-size: 21.4px;
+}
+
+
+h2 {
+    color: var(--Bright-yellow);
+    line-height: 40px;
+    font-size: 16.5px;
+}
+
+.p1 {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    line-height: 25px
+}
+
+
+/* Segunda Area */
+main {
+    padding: 25px 40px 40px 40px;
+    background-color: var(--off-cyan)
+}
+
+h4,
+.p2,
+.p3 {
+    color: white;
+}
+
+.miniCaja {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: auto;
+    grid-area: "dollar" "gris";
+}
+
+.dollar {
+    color: white;
+    font-size: 30px;
+}
+
+.gris {
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+    font-size: 16px;
+    color: var(--Light-Gray)
+}
+
+.p2 {
+    font-size: 15px;
+}
+
+/* Boton de la "Segunda Area" */
+.boton {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--Bright-yellow);
+}
+
+.boton:hover {
+    background: var(--Light-Gray);
+    color: var(--Cyan);
+}
+
+
+/* Tercer Area */
+footer {
+    padding: 25px 40px 40px 40px;
+    background-color: var(--Cyan)
+}
+
+h4 {
+    line-height: 45px;
+}
+
+.p3 p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--Light-Gray);
+}
+
+
+@media screen and (min-width:375px) {
+
+    body {
+        max-width: 700px;
+        margin: 0 auto;
+
+    }
+
+    .contenedores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header"
+            "main footer";
+    }
+
+    .contenedores header {
+        grid-area: header;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .contenedores main {
+        grid-area: main;
+        border-radius: 0px 0px 0px 8px;
+    }
+
+    .contenedores footer {
+        grid-area: footer;
+        border-radius: 0px 0px 8px 0px;
+    }
+}
